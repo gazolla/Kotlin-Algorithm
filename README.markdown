@@ -11,7 +11,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 
 ### Searching
 
-- [Linear Search]. 
+- [Linear Search] 
 - [Binary Search](BinarySearch/)
 - [Count Occurrences] 
 - [Select Minimum / Maximum] 
@@ -73,7 +73,7 @@ Special-purpose sorts:
 - [Array2D]
 - [Bit Set]
 - [Fixed Size Array]
-- [Ordered Array](Ordered Array/). An array that is always sorted.
+- [Ordered Array](Ordered Array/)
 
 ### Queues
 
@@ -86,7 +86,7 @@ Special-purpose sorts:
 
 ### Lists
 
-- [Linked List] A sequence of data items connected through links. Covers both singly and doubly linked lists.
+- [Linked List] 
 - Skip List
 
 ### Trees
@@ -115,7 +115,7 @@ Special-purpose sorts:
 - [Bloom Filter]
 - [Hash Set]
 - Multiset
-- [Ordered Set](Ordered Set/). A set where the order of items matters.
+- [Ordered Set](OrderedSet/)
 
 ### Graphs
 

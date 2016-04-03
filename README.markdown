@@ -55,7 +55,7 @@ Special-purpose sorts:
 
 ### Miscellaneous
 
-- [Shuffle] Randomly rearranges the contents of an array.
+- [Shuffle](Shuffle/) Randomly rearranges the contents of an array.
 
 ### Machine learning
 

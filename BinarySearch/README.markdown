@@ -1,8 +1,6 @@
 # Binary Search
 
-Goal: Quickly find an element in an array.
-
-Let's say you have an array of numbers and you want to determine whether a specific number is in that array, and if so, at which index.
+Binary Search is a search algorithm that finds the position of a target value, whether alone or part of a record, within a sorted array. It works by comparing the target value to the middle element of the array; if they are not equal, the lower or upper half of the array is eliminated depending on the result and the search is repeated until the position of the target value is found.
 
 ## The code
 

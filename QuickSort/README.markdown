@@ -1,10 +1,8 @@
 # Quicksort
 
-Goal: Sort an array from low to high (or high to low).
+Quicksort is an efficient sorting algorithm, serving as a systematic method for placing the elements of an array in order. Developed by Tony Hoare in 1959, with his work published in 1961, it is still a commonly used algorithm for sorting. When implemented well, it can be about two or three times faster than its main competitors, merge sort and heapsort.
 
-Quicksort is one of the most famous algorithms in history. It was invented way back in 1959 by Tony Hoare, at a time when recursion was still a fairly nebulous concept.
-
-Here's an implementation in Swift that should be easy to understand:
+Here's an implementation in kotlin that should be easy to understand:
 
 ```kotlin
 fun <T:Comparable<T>>quicksort(items:List<T>):List<T>{

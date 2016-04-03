@@ -12,7 +12,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 ### Searching
 
 - [Linear Search]. 
-- [Binary Search](BinarySearch/). 
+- [Binary Search](BinarySearch/)
 - [Count Occurrences] 
 - [Select Minimum / Maximum] 
 - [k-th Largest Element]
@@ -27,8 +27,6 @@ This is a work in progress. More algorithms will be added soon. :-)
 - [Longest Common Subsequence] 
 
 ### Sorting
-
-It's fun to see how sorting algorithms work, but in practice you'll almost never have to provide your own sorting routines. Swift's own `sort()` is more than up to the job. But if you're curious, read on...
 
 Basic sorts:
 
@@ -69,8 +67,6 @@ Special-purpose sorts:
 - PageRank
 
 ## Data structures
-
-The choice of data structure for a particular task depends on a few things.
 
 ### Variations on arrays
 

@@ -4,7 +4,7 @@ Randomly rearranges the contents of an array.
 
 ## The code
 
-Here is a recursive implementation of binary search in kotlin:
+Here is a implementation of Shuffle in kotlin:
 
 ```kotlin
 fun <T:Comparable<T>>shuffle(items:MutableList<T>):List<T>{

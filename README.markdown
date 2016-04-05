@@ -78,7 +78,7 @@ Special-purpose sorts:
 ### Queues
 
 - [Stack](Stack/)
-- [Queue]
+- [Queue](Queue/)
 - [Deque]
 - [Priority Queue]
 - [Bounded Priority Queue] 

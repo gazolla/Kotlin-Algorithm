@@ -2,7 +2,7 @@
 
 An ordered set is a common data structure that supports O(log N) lookups, insertions and removals. Ordered set is also sometimes used as an alternative to a hash map, for example in STL’s map.
 
-The implementation is quite basic:
+## The code
 
 ```kotlin
 class OrderedSet<T:Comparable<T>>(list:MutableList<T>){

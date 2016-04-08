@@ -1,6 +1,6 @@
 # Welcome to Kotlin Algorithms 
 
-Here you'll find implementations of popular algorithms and data structures in Kotlin programming language Swift.
+Here you'll find implementations of popular algorithms and data structures in Kotlin programming language.
 
 This is a work in progress. More algorithms will be added soon. :-) 
 

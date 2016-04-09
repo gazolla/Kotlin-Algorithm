@@ -5,12 +5,20 @@ Insertion sort is a simple sorting algorithm that builds the final sorted array 
 ## The code
 
 ```kotlin
-fun <T:Comparable<T>>quicksort(items:List<T>):List<T>{
-    if (items.count() < 1) return items
-    val pivot = items[items.count()/2]
-    val equal = items.filter { it == pivot }
-    val less = items.filter { it < pivot }
-    val greater = items.filter { it > pivot }
-    return quicksort(less) + equal + quicksort(greater)
+fun <T:Comparable<T>> insertionsort(items:MutableList<T>):List<T>{
+    if (items.isEmpty()){
+        return items
+    }
+    for (count in 1..items.count() - 1){
+        val item = items[count]
+        var i = count
+        while (i>0 && item < items[i - 1]){
+            items[i] = items[i - 1]
+            i -= 1
+        }
+        items[i] = item
+    }
+    return items
 }
+
 ```

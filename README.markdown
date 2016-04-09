@@ -30,7 +30,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 
 Basic sorts:
 
-- [Insertion Sort]
+- [Insertion Sort](InsertionSort/)
 - [Selection Sort]
 - [Shell Sort]
 

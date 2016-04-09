@@ -31,7 +31,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 Basic sorts:
 
 - [Insertion Sort](InsertionSort/)
-- [Selection Sort]
+- [Selection Sort](SelectionSort/)
 - [Shell Sort]
 
 Fast sorts:

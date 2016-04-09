@@ -25,8 +25,6 @@ fun <T:Comparable<T>>mergesort(items:MutableList<T>):MutableList<T>{
 
     val pivot = items.count()/2
 
-    items.subList(0, pivot)
-
     var left  = mergesort(items.subList(0, pivot))
     var right = mergesort(items.subList(pivot, items.count()-1))
 

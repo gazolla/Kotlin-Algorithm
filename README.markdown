@@ -91,7 +91,7 @@ Special-purpose sorts:
 
 ### Trees
 
-- [Tree] 
+- [Tree](Tree/) 
 - [Binary Tree] 
 - [Binary Search Tree (BST)] 
 - [AVL Tree] 

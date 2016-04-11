@@ -86,7 +86,7 @@ Special-purpose sorts:
 
 ### Lists
 
-- [Linked List] 
+- [Linked List](LinkedList/) 
 - Skip List
 
 ### Trees

@@ -137,3 +137,7 @@ All content is licensed under the terms of the MIT open source license.
 * [@gazollajr](http://twitter.com/gazollajr)
 * [http://gazapps.com](http://gazapps.com)
 * [http://about.me/gazolla](http://about.me/gazolla)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gazolla/kotlin-algorithm/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

@@ -131,6 +131,11 @@ Special-purpose sorts:
 
 All content is licensed under the terms of the MIT open source license.
 
+### Contributor
+* Andy Bowes
+* [Andy Bowes](https://github.com/AndyBowes)
+
+
 ### Contact
 
 * Sebastian Gazolla Jr

@@ -143,5 +143,3 @@ All content is licensed under the terms of the MIT open source license.
 * [http://about.me/gazolla](http://about.me/gazolla)
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gazolla/kotlin-algorithm/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

@@ -50,7 +50,7 @@ Special-purpose sorts:
 
 ### Compression
 
-- [Run-Length Encoding (RLE)] 
+- [Run-Length Encoding (RLE)](Compression/)
 - [Huffman Coding] 
 
 ### Miscellaneous
@@ -79,7 +79,7 @@ Special-purpose sorts:
 
 - [Stack](Stack/)
 - [Queue](Queue/)
-- [Deque]
+- [Deque](Deque/)
 - [Priority Queue]
 - [Bounded Priority Queue] 
 - [Ring Buffer]

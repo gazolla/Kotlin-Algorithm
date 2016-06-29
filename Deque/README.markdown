@@ -1,21 +1,57 @@
-# Run-length encoding
+# Dequeue
 
-Run-length encoding (RLE) is a very simple form of lossless data compression in which runs of data (that is, sequences in which the same data value occurs in many consecutive data elements) are stored as a single data value and count, rather than as the original run. This is most useful on data that contains many such runs. Consider, for example, simple graphic images such as icons, line drawings, and animations. It is not useful with files that don't have many runs as it could greatly increase the file size.
-
-RLE may also be used to refer to an early graphics file format supported by CompuServe for compressing black and white images, but was widely supplanted by their later Graphics Interchange Format. RLE also refers to a little-used image format in Windows 3.x, with the extension rle, which is a Run Length Encoded Bitmap, used to compress the Windows 3.x startup screen.
+In computer science, a double-ended queue (dequeue, often abbreviated to deque, pronounced deck) is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).[1] It is also often called a head-tail linked list, though properly this refers to a specific data structure implementation 
 
 source:Wikipedia
 
 ## The code
 
 ```kotlin
-tailrec fun runLengthEncoding(text:String,prev:String=""):String {
-    if (text.length == 0){
-        return prev
+class Deque<T>(){
+
+    var backingList : MutableList<T> = arrayListOf()
+
+    fun addFirst(element:T){
+        backingList.add(0,element)
     }
-    val initialChar = text.get(0)
-    val count = text.takeWhile{ it==initialChar }.count()
-    return runLengthEncoding(text.substring(count),prev + "$count$initialChar" )
+
+    fun getFirst():T?{
+        if (backingList.isEmpty()){
+            return null
+        }
+        val value = backingList.first()
+        removeFirst()
+        return value
+    }
+
+    fun removeFirst(){
+        if (backingList.isNotEmpty()) backingList.removeAt(0)
+    }
+
+    fun peekFirst(): T?{
+        return if (backingList.isNotEmpty()) backingList.first() else null
+    }
+
+    fun addLast(element:T){
+        backingList.add(element)
+    }
+
+    fun getLast():T?{
+        if (backingList.isEmpty()){
+            return null
+        }
+        val value = backingList.last()
+        removeLast()
+        return value
+    }
+
+    fun removeLast(){
+        if (backingList.isNotEmpty()) backingList.removeAt(backingList.size - 1)
+    }
+
+    fun peekLast():T?{
+        return if (backingList.isNotEmpty()) backingList.last() else null
+    }
 }
 
 ```

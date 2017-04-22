@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2d74b27-d4f8-4339-b51c-d0fff6c0b424" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DepthFirstSearch/AdjacencyList.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DepthFirstSearch/DepthFirstSearch.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DepthFirstSearch/Edge.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DepthFirstSearch/Graphable.kt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DepthFirstSearch/Vertex.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Stack/Stack.kt" afterPath="$PROJECT_DIR$/Stack/Stack.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Kotlin-Algorithm.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Kotlin-Algorithm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +40,7 @@
       <file leaf-file-name="DepthFirstSearch.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DepthFirstSearch/DepthFirstSearch.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32">
+            <state relative-caret-position="-50">
               <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding />
             </state>
@@ -616,7 +612,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DepthFirstSearch/DepthFirstSearch.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
+        <state relative-caret-position="-50">
           <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
           <folding />
         </state>

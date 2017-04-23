@@ -11,7 +11,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 
 ### Searching
 
-- [Linear Search] (LinearSearch/)
+- [Linear Search](LinearSearch/)
 - [Binary Search](BinarySearch/)
 - [Count Occurrences] 
 - [Select Minimum / Maximum] 

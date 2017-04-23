@@ -36,6 +36,18 @@ class Stack<T:Comparable<T>>(list:MutableList<T>) {
         }
     }
 
+    override fun toString(): String {
+        val topDivider = "---Stack---\n"
+        val bottomDivider = "\n-----------"
+
+        val stackElements = array.map {
+            "$it"
+        }.reversed().joinToString("\n")
+
+        return topDivider + stackElements + bottomDivider
+
+    }
+
 }
 
 fun main(args: Array<String>) {

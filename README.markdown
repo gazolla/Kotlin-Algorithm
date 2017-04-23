@@ -18,7 +18,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 - [k-th Largest Element]
 - [Selection Sampling]
 - [Union-Find] 
-- [DepthFirstSearch](DepthFirstSearch/)
+- [Depth-First Search](DepthFirstSearch/)
 
 ### String Search
 

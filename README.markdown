@@ -18,6 +18,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 - [k-th Largest Element]
 - [Selection Sampling]
 - [Union-Find] 
+- [DepthFirstSearch](DepthFirstSearch/)
 
 ### String Search
 
@@ -133,6 +134,7 @@ All content is licensed under the terms of the MIT open source license.
 
 ### Contributors
 * [Andy Bowes](https://github.com/AndyBowes)
+* [Niccolò Passolunghi](https://github.com/nicopasso)
 
 
 ### Contact

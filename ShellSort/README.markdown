@@ -7,4 +7,4 @@ Starting with far apart elements, it can move some out-of-place elements into po
 Donald Shell published the first version of this sort in 1959.
 The running time of Shellsort is heavily dependent on the gap sequence it uses.
 
-source: wikipedia
+source: [Wikipedia ShellSort](https://en.wikipedia.org/wiki/Shellsort)

@@ -33,7 +33,7 @@ Basic sorts:
 
 - [Insertion Sort](InsertionSort/)
 - [Selection Sort](SelectionSort/)
-- [Shell Sort]
+- [Shell Sort](ShellSort/)
 
 Fast sorts:
 

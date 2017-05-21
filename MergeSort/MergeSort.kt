@@ -35,6 +35,6 @@ fun <T:Comparable<T>>mergesort(items:MutableList<T>):MutableList<T>{
 fun main(args: Array<String>) {
     val names = mutableListOf("John", "Tim", "Zack", "Daniel", "Adam")
     println(names)
-    var ordered = insertionsort(names)
+    var ordered = mergesort(names)
     println(ordered)
 }

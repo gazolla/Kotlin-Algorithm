@@ -135,6 +135,7 @@ All content is licensed under the terms of the MIT open source license.
 ### Contributors
 * [Andy Bowes](https://github.com/AndyBowes)
 * [Niccolò Passolunghi](https://github.com/nicopasso)
+* [Vansh Gandhi](https://github.com/vanshg)
 
 
 ### Contact

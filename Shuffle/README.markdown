@@ -18,3 +18,17 @@ fun <T:Comparable<T>>shuffle(items:MutableList<T>):List<T>{
     return items
 }
 ```
+
+Shuffle implementation provide by Markus Kramer. This implementation reuses existing code to do the shuffling and can be called like other kotlin collection functions.
+ 
+```kotlin
+  /**
+     * Returns a randomized list.
+     */
+    fun <T> Iterable<T>.shuffle(seed: Long? = null): List<T> {
+        val list = this.toMutableList()
+        val random = if (seed != null) Random(seed) else Random()
+        Collections.shuffle(list, random)
+        return list
+    }
+```

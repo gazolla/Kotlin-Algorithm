@@ -137,6 +137,7 @@ All content is licensed under the terms of the MIT open source license.
 * [Niccolò Passolunghi](https://github.com/nicopasso)
 * [Vansh Gandhi](https://github.com/vanshg)
 * [Szabolcs Besenyei](https://github.com/besza)
+* [Markus Kramer](https://github.com/MarkusKramer)
 
 
 ### Contact

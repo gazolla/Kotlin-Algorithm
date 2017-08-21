@@ -3,7 +3,7 @@
  */
 
 fun <T:Comparable<T>>quicksort(items:List<T>):List<T>{
-    if (items.count() < 1){
+    if (items.count() < 2){
         return items
     }
     val pivot = items[items.count()/2]

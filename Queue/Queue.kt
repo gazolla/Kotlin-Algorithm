@@ -1,7 +1,9 @@
 /**
  * Created by gazollajunior on 05/04/16.
  */
-class Queue <T>(list:MutableList<T>){
+class Queue <T>(list:MutableList<T>): Iterator<T>{
+
+    var itCounter: Int = 0
 
     var items:MutableList<T> = list
 
@@ -27,6 +29,24 @@ class Queue <T>(list:MutableList<T>){
         return this.items[0]
     }
 
+    override fun hasNext(): Boolean {
+        val hasNext = itCounter < count()
+
+        // As soon as condition fails, reset the counter
+        if (!hasNext) itCounter = 0
+
+        return hasNext
+    }
+
+    override fun next(): T {
+        if (hasNext()) {
+            val topPos: Int = (count() - 1) - itCounter
+            itCounter++
+            return this.items[topPos]
+        } else {
+            throw NoSuchElementException("No such element")
+        }
+    }
 }
 
 
@@ -48,5 +68,7 @@ fun main(args: Array<String>) {
     queue.dequeue()
     println(queue)
 
+    // Iterating over queue
+    for (item in queue) println("Item in queue : " + item)
 
 }

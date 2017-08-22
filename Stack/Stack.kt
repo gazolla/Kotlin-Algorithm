@@ -3,7 +3,9 @@
  */
 
 
-class Stack<T:Comparable<T>>(list:MutableList<T>) {
+class Stack<T:Comparable<T>>(list:MutableList<T>):Iterator<T> {
+
+    var itCounter: Int = 0
 
     var items: MutableList<T> = list
 
@@ -36,16 +38,37 @@ class Stack<T:Comparable<T>>(list:MutableList<T>) {
         }
     }
 
-    override fun toString(): String {
-        val topDivider = "---Stack---\n"
-        val bottomDivider = "\n-----------"
+// Note Let the default implementation exist
 
-        val stackElements = array.map {
-            "$it"
-        }.reversed().joinToString("\n")
+//    override fun toString(): String {
+//        val topDivider = "---Stack---\n"
+//        val bottomDivider = "\n-----------"
+//
+//        val stackElements = array.map {
+//            "$it"
+//        }.reversed().joinToString("\n")
+//
+//        return topDivider + stackElements + bottomDivider
+//
+//    }
 
-        return topDivider + stackElements + bottomDivider
+    override fun hasNext(): Boolean {
+        val hasNext = itCounter < count()
 
+        // As soon as condition fails, reset the counter
+        if (!hasNext) itCounter = 0
+
+        return hasNext
+    }
+
+    override fun next(): T {
+        if (hasNext()) {
+            val topPos: Int = (count() - 1) - itCounter
+            itCounter++
+            return this.items[topPos]
+        } else {
+            throw NoSuchElementException("No such element")
+        }
     }
 
 }
@@ -64,5 +87,6 @@ fun main(args: Array<String>) {
     stack.pop()
     println(stack)
 
+    for (item in stack) println("Item in stack : " + item)
 
 }

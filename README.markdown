@@ -19,6 +19,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 - [Selection Sampling]
 - [Union-Find] 
 - [Depth-First Search](DepthFirstSearch/)
+- [Breadth-First Search](BreadthFirstSearch/)
 
 ### String Search
 

@@ -19,6 +19,7 @@ This is a work in progress. More algorithms will be added soon. :-)
 - [Selection Sampling]
 - [Union-Find] 
 - [Depth-First Search](DepthFirstSearch/)
+- [Breadth-First Search](BreadthFirstSearch/)
 
 ### String Search
 
@@ -101,7 +102,7 @@ Special-purpose sorts:
 - Threaded Binary Tree
 - [Segment Tree] 
 - kd-Tree
-- [Heap] 
+- [Heap](Heap/)
 - Fibonacci Heap
 - Trie
 - [B-Tree]

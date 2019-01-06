@@ -102,7 +102,7 @@ Special-purpose sorts:
 - Threaded Binary Tree
 - [Segment Tree] 
 - kd-Tree
-- [Heap] 
+- [Heap](Heap/)
 - Fibonacci Heap
 - Trie
 - [B-Tree]

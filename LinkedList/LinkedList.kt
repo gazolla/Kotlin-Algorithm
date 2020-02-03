@@ -2,47 +2,38 @@
  * Created by gazollajunior on 07/04/16.
  */
 
-class Node<T>(value: T){
-    var value:T = value
+class Node<T>(value: T) {
+    var value: T = value
     var next: Node<T>? = null
-    var previous:Node<T>? = null
+    var previous: Node<T>? = null
 }
 
 class LinkedList<T> {
 
-    private var head:Node<T>? = null
+    private var head: Node<T>? = null
 
-    var isEmpty:Boolean = head == null
+    private var _count = 0
 
-    fun first():Node<T>? = head
+    var isEmpty: Boolean = head == null
+
+    fun first(): Node<T>? = head
 
     fun last(): Node<T>? {
-            var node = head
-            if (node != null){
-                while (node?.next != null) {
-                    node = node?.next
-                }
-                return node
-            } else {
-                return null
-            }
-    }
-
-    fun count():Int {
         var node = head
-        if (node != null){
-            var counter = 1
-            while (node?.next != null){
+        if (node != null) {
+            while (node?.next != null) {
                 node = node?.next
-                counter += 1
             }
-            return counter
+            return node
         } else {
-            return 0
+            return null
         }
     }
 
-    fun nodeAtIndex(index: Int) : Node<T>? {
+    val count
+        get() = _count
+
+    fun nodeAtIndex(index: Int): Node<T>? {
         if (index >= 0) {
             var node = head
             var i = index
@@ -65,13 +56,15 @@ class LinkedList<T> {
         } else {
             head = newNode
         }
+        _count++
     }
 
     fun removeAll() {
         head = null
+        _count = 0
     }
 
-    fun removeNode(node: Node<T>):T {
+    fun removeNode(node: Node<T>): T {
         val prev = node.previous
         val next = node.next
 
@@ -84,22 +77,24 @@ class LinkedList<T> {
 
         node.previous = null
         node.next = null
-
+        _count--
         return node.value
     }
 
-    fun removeLast() : T? {
+    fun removeLast(): T? {
         val last = this.last()
         if (last != null) {
+            _count--
             return removeNode(last)
         } else {
             return null
         }
     }
 
-    fun removeAtIndex(index: Int):T? {
+    fun removeAtIndex(index: Int): T? {
         val node = nodeAtIndex(index)
         if (node != null) {
+            _count--
             return removeNode(node)
         } else {
             return null
@@ -112,7 +107,9 @@ class LinkedList<T> {
         while (node != null) {
             s += "${node.value}"
             node = node.next
-            if (node != null) { s += ", " }
+            if (node != null) {
+                s += ", "
+            }
         }
         return s + "]"
     }

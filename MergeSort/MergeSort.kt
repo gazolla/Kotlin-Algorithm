@@ -22,15 +22,9 @@ fun <T : Comparable<T>> mergeSort(items: List<T>): List<T> {
             }
         }
 
-        while (leftIndex < left.size) {
-            merged.add(left[leftIndex])
-            leftIndex++
-        }
-
-        while (rightIndex < right.size) {
-            merged.add(right[rightIndex])
-            rightIndex++
-        }
+Op        // Add the remaining elements from the unfinished list
+        merged.addAll(left.subList(leftIndex, left.size))
+        merged.addAll(right.subList(rightIndex, right.size))
 
         return merged
     }
@@ -40,6 +34,13 @@ fun <T : Comparable<T>> mergeSort(items: List<T>): List<T> {
     val right = mergeSort(items.subList(pivot, items.size))
 
     return merge(left, right)
+}
+
+val pivot = items.size / 2
+val left = mergeSort(items.subList(0, pivot))
+val right = mergeSort(items.subList(pivot, items.size))
+
+return merge(left, right)
 }
 
 fun main() {

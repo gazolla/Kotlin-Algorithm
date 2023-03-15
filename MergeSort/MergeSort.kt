@@ -1,40 +1,50 @@
 /**
  * Created by gazollajunior on 09/04/16.
+ * Updated by yazdanmanesh on 03/16/23
  */
-fun <T:Comparable<T>>mergesort(items:MutableList<T>):MutableList<T>{
-    if (items.isEmpty()){
+fun <T : Comparable<T>> mergeSort(items: List<T>): List<T> {
+    if (items.size <= 1) {
         return items
     }
 
-     fun merge(left:MutableList<T>, right:MutableList<T>):MutableList<T>{
-        var merged: MutableList<T> = arrayListOf<T>()
-        while(!left.isEmpty() && !right.isEmpty()){
-            val temp:T
-            if (left.first() < right.first()) {
-                temp = left.removeAt(0)
-            } else {
-                temp = right.removeAt(0)
-            }
-            merged.add(temp)
-        }
-        if (!left.isEmpty()) merged.addAll(left)
-        if (!right.isEmpty()) merged.addAll(right)
+    fun merge(left: List<T>, right: List<T>): List<T> {
+        val merged = mutableListOf<T>()
+        var leftIndex = 0
+        var rightIndex = 0
 
-         return merged
+        while (leftIndex < left.size && rightIndex < right.size) {
+            if (left[leftIndex] < right[rightIndex]) {
+                merged.add(left[leftIndex])
+                leftIndex++
+            } else {
+                merged.add(right[rightIndex])
+                rightIndex++
+            }
+        }
+
+        while (leftIndex < left.size) {
+            merged.add(left[leftIndex])
+            leftIndex++
+        }
+
+        while (rightIndex < right.size) {
+            merged.add(right[rightIndex])
+            rightIndex++
+        }
+
+        return merged
     }
 
-    val pivot = items.count()/2
-
-    var left  = mergesort(items.subList(0, pivot))
-    var right = mergesort(items.subList(pivot, items.count()-1))
+    val pivot = items.size / 2
+    val left = mergeSort(items.subList(0, pivot))
+    val right = mergeSort(items.subList(pivot, items.size))
 
     return merge(left, right)
 }
 
-
-fun main(args: Array<String>) {
+fun main() {
     val names = mutableListOf("John", "Tim", "Zack", "Daniel", "Adam")
     println(names)
-    var ordered = mergesort(names)
+    val ordered = mergeSort(names)
     println(ordered)
 }

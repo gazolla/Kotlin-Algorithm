@@ -22,7 +22,7 @@ fun <T : Comparable<T>> mergeSort(items: List<T>): List<T> {
             }
         }
 
-Op        // Add the remaining elements from the unfinished list
+        // Add the remaining elements from the unfinished list
         merged.addAll(left.subList(leftIndex, left.size))
         merged.addAll(right.subList(rightIndex, right.size))
 

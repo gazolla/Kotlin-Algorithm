@@ -1,3 +1,5 @@
+Please consider submitting your pull requests. This project is an updated version of Kotlin-Algorithms , and I'm seeking your help to keep it up-to-date.
+
 # Welcome to Kotlin Algorithms 
 
 Here you'll find implementations of popular algorithms and data structures in [Kotlin programming language](https://kotlinlang.org/).
